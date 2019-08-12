@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Negative Numbers Test" verbose="1" parallel="methods"
+       thread-count="3">
+    <listeners>
+        <listener class-name="com.epam.mentoring.listeners.TestListener"/>
+    </listeners>
+    <test verbose="1" name="negative test">
+        <parameter name="positiveNumber" value="9223372036854775806"/>
+        <parameter name="negativeNumber" value="-16790"/>
+
+        <classes>
+            <class name="com.epam.mentoring.tests.NegativeNumbersTest"></class>
+        </classes>
+    </test>
+</suite>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Test trigonometric Operations">
+    <listeners>
+        <listener class-name="com.epam.mentoring.listeners.TestListener"/>
+    </listeners>
+    <test name="calculator trigonometric operations">
+        <groups>
+            <run>
+                <include name="trigonometricOperation" />
+            </run>
+        </groups>
+
+        <classes>
+            <class name="com.epam.mentoring.tests.trigonometricOperation.SinTest" />
+            <class name="com.epam.mentoring.tests.trigonometricOperation.CosTest"/>
+            <class name="com.epam.mentoring.tests.trigonometricOperation.TgTest"/>
+            <class name="com.epam.mentoring.tests.trigonometricOperation.CtgTest"/>
+        </classes>
+
+    </test>
+
+</suite>

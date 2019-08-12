@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Test define number Operations">
+
+        <groups>
+            <run>
+                <include name="defineNumber" />
+            </run>
+        </groups>
+
+        <suite-files>
+            <suite-file path="PositiveNumbersTest.xml"/>
+            <suite-file path="NegativeNumbersTest.xml"/>
+        </suite-files>
+
+</suite>

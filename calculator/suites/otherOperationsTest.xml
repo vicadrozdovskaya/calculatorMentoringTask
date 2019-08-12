@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Test other Operations">
+    <listeners>
+        <listener class-name="com.epam.mentoring.listeners.TestListener"/>
+    </listeners>
+    <test name="calculator other operations">
+        <groups>
+            <run>
+                <include name="otherOperations" />
+            </run>
+        </groups>
+
+        <classes>
+            <class name="com.epam.mentoring.tests.PowTest" />
+            <class name="com.epam.mentoring.tests.SqrtTest"/>
+        </classes>
+
+    </test>
+
+</suite>

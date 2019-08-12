@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Test base Operations" verbose="1" parallel="instances"
+       thread-count="3">
+    <listeners>
+        <listener class-name="com.epam.mentoring.listeners.TestListener"/>
+    </listeners>
+    <test name="calculator base operations" verbose="1">
+        <groups>
+            <run>
+                <include name="baseOperation" />
+                <exclude name="longTypeOfData" />
+            </run>
+        </groups>
+
+        <packages>
+            <package name="com.epam.mentoring.tests.base_operations" />
+        </packages>
+
+    </test>
+
+</suite>
